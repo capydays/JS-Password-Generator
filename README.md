@@ -12,7 +12,7 @@ No installation needed. Link to web page here:
 
 This project uses basic HTML aand CSS designs to allow users to interact with JavaScript to create a unique password. The Javascript code uses basic web API methods like .confirm(), .prompt(), and .alert() to provide users to customize certain aspects of their unique password. Customizable aspects of the password inlcude whether or not to include numbers, lower and upper case letters, and special characters. Additionally, the user can select a password length between 8 and 128 characters. Should the user choose a lenght outside the 8 - 128 range, or select no characters for their password customization, they will be prompted to start the process again and choose valid inputs. Users initate the passwrod creation process by clicking the "Generate Password" button. A screenshot is provided below:
 
-![JS Password Generator](image-2.png)
+![JS Password Generator](image.png)
 
 ## Credits
 

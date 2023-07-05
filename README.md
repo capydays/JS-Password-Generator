@@ -6,7 +6,7 @@ This project was undertaken as the third challenge assement for the U of M Fulls
 
 ## Installation
 
-No installation needed. Link to web page here: 
+No installation needed. Link to web page here: https://capydays.github.io/JS-Password-Generator/
 
 ## Usage
 

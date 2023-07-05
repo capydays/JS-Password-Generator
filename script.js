@@ -12,12 +12,12 @@ function generatePassword() {
   var passLength = window.prompt("How many characters would you like your password to be? (Min 8 - Max 128)");
 
   if (!userNum && !userLower && !userUpper && !userSpecial) {
-    window.alert("You have not selected any valid password character options. Please refresh and try again.")
+    window.alert("You have not selected any valid password character options. Please try again.")
     return
   } else if (parseInt(passLength) >= 8 && parseInt(passLength) <= 128) {
     window.alert("Your preferences have been saved. Please check below for your unique password!")
   } else {
-    window.alert("You have entered an invalid password length. Please refresh and try again.")
+    window.alert("You have entered an invalid password length. Please try again.")
     return
   }
 

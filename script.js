@@ -10,7 +10,6 @@ var userUpper = window.confirm("Would you like your password to contain uppercas
 var userSpecial = window.confirm("Would you like your password to contain special characters?")
 var passLength = window.prompt("How many characters would you like your password to be? (Min 8 - Max 128)")
 
-
 if (!userNum && !userLower && !userUpper && !userSpecial) {
   window.alert("You have not selected any valid password character options. Please refresh and try again.")
 } else if (parseInt(passLength) >= 8 && parseInt(passLength) <= 128) {
@@ -18,12 +17,22 @@ if (!userNum && !userLower && !userUpper && !userSpecial) {
 } else {
   window.alert("You have entered an invalid password length. Please refresh and try again.")
 }
+var userArray = [userNum, userLower, userUpper, userSpecial]
+var charArray = [numbers, lowerABC, upperABC, specialChar]
+var passString = ""
 
+function generatePassword() {
+  for (var n = 0; n <= charArray.length; n++) {
+    if (userArray[n] == true) {
+      passString += charArray[n]
+    }
+  }
 
-
-
-
-// generatePassword() {}
+  for (var i = 0; i <= passLength; i++) {
+    var randomChar = Math.floor(Math.random() * passString.length)
+    var userPass = passString.substring(randomChar, )
+  }
+}
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
